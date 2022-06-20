@@ -10,9 +10,14 @@
     <title>Document</title>
 </head>
 <body>
+
     <?php
-        $testObj = new Test();
-        $testObj->setUsersStmt("Kareem", "Ismail", "1995-03-05");
+        $view = new UsersView();
+        $view->showUser("Abdullah");
+
+        $usersObj2 = new UsersContr();
+        $usersObj2->createUser("tamer", "Ahmed", "1975-02-12");
     ?>
+
 </body>
 </html>
